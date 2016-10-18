@@ -1,0 +1,22 @@
+# After adding changes run "rake i18n:js:export" for export new translations to i18b/translations.js
+en:
+  js:
+    locations:
+      name: Name
+      address: Address
+      lat: Latitude
+      lng: Longitude
+      actions: Actions
+      placeholders:
+        name: Enter a location name
+        address: Enter a location address
+      buttons:
+        create: Create location
+
+    buttons:
+      edit: Edit
+      show: Show
+      create: Create
+      update: Update
+      cancel: Cancel
+      delete: Delete

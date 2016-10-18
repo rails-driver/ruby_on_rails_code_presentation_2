@@ -1,0 +1,17 @@
+!!!
+%html{ lang: I18n.locale }
+  %head
+    %meta{ content: 'text/html; charset=UTF-8', 'http-equiv': 'Content-Type' }/
+    %title= 'CGM | ' + title
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', data: { turbolinks_track: 'reload' }
+    = javascript_include_tag 'application', data: { turbolinks_track: 'reload' }
+    = yield :header
+    = javascript_include_tag path_to_js_for_current_page, data: { turbolinks_track: 'reload' }
+  %body
+  .container
+    .page-header
+      %h1= title
+    #flash_messages
+      = flash_messages
+    = yield

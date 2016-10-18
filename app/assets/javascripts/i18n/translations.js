@@ -1,0 +1,2 @@
+I18n.translations || (I18n.translations = {});
+I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {"js":{"buttons":{"cancel":"Cancel","create":"Create","delete":"Delete","edit":"Edit","show":"Show","update":"Update"},"locations":{"actions":"Actions","address":"Address","buttons":{"create":"Create location"},"lat":"Latitude","lng":"Longitude","name":"Name","placeholders":{"address":"Enter a location address","name":"Enter a location name"}}}});

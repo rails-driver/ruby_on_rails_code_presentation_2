@@ -1,0 +1,33 @@
+en:
+  maps:
+    title: Maps
+    name: Name
+    location: Location/Address
+    lat: Latitude
+    lng: Longitude
+    actions: Actions
+    create:
+      success: Map was created successfully
+      error: Map was not created
+    update:
+      success: Map was updated successfully
+      error: Map was not updated
+    destroy:
+      success: Map was removed successfully
+
+  simple_form:
+    placeholders:
+      map:
+        name: Enter a map name
+        location: Enter a map location/address
+
+  helpers:
+    submit:
+      cancel: Cancel
+      map:
+        create: Create
+        create_and_show: Create and show
+        update: Update
+        edit: Edit
+        show: Show
+        destroy: Delete

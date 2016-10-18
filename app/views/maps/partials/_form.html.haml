@@ -1,0 +1,13 @@
+= simple_form_for @map, validate: true do |f|
+  .map-input
+    = f.input :name
+  .map-input
+    = f.input :location
+  .map-buttons
+    = f.button :submit, class: 'map-action'
+    - case action_name
+    - when 'index', 'create', 'destroy'
+      = f.submit t('helpers.submit.map.create_and_show'), name: 'show',
+        class: 'btn btn-info map-create-and-show'
+    - when 'edit', 'update'
+      = link_to t('helpers.submit.cancel'), maps_path, class: 'btn btn-danger map-cancel'

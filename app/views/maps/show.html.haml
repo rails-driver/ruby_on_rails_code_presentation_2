@@ -1,0 +1,4 @@
+- content_for :header do
+  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCQBZAsGTQHFPSAQ2dx2BmTO6KJe8UF4Sc&language=#{I18n.locale}"
+
+= react_component 'Locations', { map_id: @map.id, map_coordinates: @map.coordinates, data: @locations }

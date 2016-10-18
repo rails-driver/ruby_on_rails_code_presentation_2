@@ -1,0 +1,52 @@
+@import dataTables.bootstrap.min
+
+.js-map
+  height: 50vh
+
+.new_map, .edit_map, .new_location
+  .map-input, .location-input
+    width: 40%
+    float: left
+    padding: 0 15px
+
+    .form-group
+      margin-bottom: 0
+
+    .help-block
+      margin-bottom: 0
+
+  .map-buttons, .location-buttons
+    width: 20%
+    float: left
+    padding: 0 15px
+
+  input[type='submit'], a
+    white-space: nowrap
+    overflow: hidden !important
+    text-overflow: ellipsis
+
+.new_map
+  .map-action
+    width: 34%
+
+  .map-create-and-show
+    width: 65%
+    float: right
+
+.edit_map
+  .map-action
+    width: 49%
+
+  .map-cancel
+    width: 48%
+    float: right
+
+.js-maps-table, .locations-table
+  td
+    vertical-align: middle !important
+
+.locations-table
+  .btn
+    margin-right: 5px
+    &:last-child
+      margin-right: 0

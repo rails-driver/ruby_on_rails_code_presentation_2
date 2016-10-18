@@ -1,0 +1,26 @@
+#map-form.row
+  = render partial: 'maps/partials/form'
+
+%hr
+
+#maps-table
+  %table.js-maps-table.table.table-bordered
+    %thead
+      %tr
+        %th= t 'maps.name'
+        %th= t 'maps.location'
+        %th= t 'maps.lat'
+        %th= t 'maps.lng'
+        %th= t 'maps.actions'
+    %tbody
+      - @maps.each do |map|
+        %tr
+          %td= map.name
+          %td= map.location
+          %td= map.lat
+          %td= map.lng
+          %td
+            = link_to t('helpers.submit.map.show'), map_path(map), class: 'btn btn-success', data: { turbolinks: false }
+            = link_to t('helpers.submit.map.edit'), edit_map_path(map), remote: true, class: 'btn btn-info'
+            = link_to t('helpers.submit.map.destroy'), map_path(map), method: :delete, remote: true,
+              class: 'btn btn-danger', data: { remove_map: map.id }
